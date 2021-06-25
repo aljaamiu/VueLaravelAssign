@@ -116,7 +116,7 @@ class apiController extends Controller
         
     }
 
-    ////save
+    ////save to db
     public function save(Request $req){
 
         if( !empty($req->name) && !empty($req->phone) && !empty($req->org_id) ){

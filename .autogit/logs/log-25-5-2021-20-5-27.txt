@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Jun 25 2021 20:05:27 GMT+0000 (Greenwich Mean Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/apiController.php
+* public/js/app.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
