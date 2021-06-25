@@ -118,11 +118,11 @@
                 </div>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                        <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item"><a class="page-link" href="#" @click="fetchSubscriber(pagination.prev_page_url)">Previous</a></li>
+                        <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item"><a class="page-link" href="#" @click="fetchSubscribers(pagination.prev_page_url)">Previous</a></li>
 
                         <li class="page-item disabled"><a class="page-link text-dark" href="#">Page {{ pagination.current_page }} of {{ pagination.last_page }}</a></li>
                     
-                        <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item"><a class="page-link" href="#" @click="fetchSubscriber(pagination.next_page_url)">Next</a></li>
+                        <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item"><a class="page-link" href="#" @click="fetchSubscribers(pagination.next_page_url)">Next</a></li>
                     </ul>
                 </nav>
             </div>
@@ -195,8 +195,10 @@
                         let pagination = {
                             current_page: res.current_page,
                             last_page: res.last_page,
-                            next_page_url: mylinks.next,
-                            prev_page_url: mylinks.prev
+                            // next_page_url: mylinks.next,
+                            next_page_url: res.next_page_url,
+                            // prev_page_url: mylinks.prev
+                            prev_page_url: res.prev_page_url
                         };
 
                         this.pagination = pagination;

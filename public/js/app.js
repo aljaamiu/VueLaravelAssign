@@ -2036,8 +2036,10 @@ __webpack_require__.r(__webpack_exports__);
         var pagination = {
           current_page: res.current_page,
           last_page: res.last_page,
-          next_page_url: mylinks.next,
-          prev_page_url: mylinks.prev
+          // next_page_url: mylinks.next,
+          next_page_url: res.next_page_url,
+          // prev_page_url: mylinks.prev
+          prev_page_url: res.prev_page_url
         };
         _this.pagination = pagination;
       })["catch"](function (err) {
@@ -38506,7 +38508,9 @@ var render = function() {
                     attrs: { href: "#" },
                     on: {
                       click: function($event) {
-                        return _vm.fetchSubscriber(_vm.pagination.prev_page_url)
+                        return _vm.fetchSubscribers(
+                          _vm.pagination.prev_page_url
+                        )
                       }
                     }
                   },
@@ -38544,7 +38548,9 @@ var render = function() {
                     attrs: { href: "#" },
                     on: {
                       click: function($event) {
-                        return _vm.fetchSubscriber(_vm.pagination.next_page_url)
+                        return _vm.fetchSubscribers(
+                          _vm.pagination.next_page_url
+                        )
                       }
                     }
                   },

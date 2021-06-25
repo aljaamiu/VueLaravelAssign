@@ -263,7 +263,7 @@ class apiController extends Controller
 
         //return $req; //{"name":"Muhammed Jamiu","is_active":1,"is_private":1,"v_id":3,"phone":"233241234569","org_id":"1","subscriber_property_id":null,"subscriber_id":3,"styleObject":{"width":"100px","height":"100px"},"id":3}
 
-        if( !empty($req->v_id) && !empty($req->name) && !empty($req->phone) && !empty($req->org_id) && !empty($req->is_private) && !empty($req->is_active) ){
+        if( !empty($req->v_id) && !empty($req->name) && !empty($req->phone) && !empty($req->org_id) && !empty($req->is_active) ){
             //
             $name = ucwords( $req->name);
             $org_id = $req->org_id;
