@@ -38708,7 +38708,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", [
       _c("tr", [
-        _c("th", [_vm._v("ID")]),
+        _c("th", [_vm._v("Subscriber ID")]),
         _vm._v(" "),
         _c("th", [_vm._v("Value")]),
         _vm._v(" "),

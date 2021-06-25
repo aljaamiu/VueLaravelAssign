@@ -119,7 +119,7 @@ class apiController extends Controller
     ////save
     public function save(Request $req){
 
-        if( !empty($req->name) && !empty($req->phone) && !empty($req->org_id) && !empty($req->is_private) ){
+        if( !empty($req->name) && !empty($req->phone) && !empty($req->org_id) ){
             //
             $name = ucwords( $req->name);
             $org_id = $req->org_id;
