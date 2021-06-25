@@ -96,7 +96,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                            <th>ID</th>
+                            <th>Subscriber ID</th>
                             <th>Value</th>
                             <th>Phone</th>
                             <th class="text-right">Action</th>
